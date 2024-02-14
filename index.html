@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elements</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="resources/js/clicked.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            background-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background" style="position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; background-color: black;"></div>
+    <video autoplay muted loop id="myVideo">
+        <source src="https://cdn.dribbble.com/userupload/3015436/file/original-3c03285d2412d53daeeda56f8810e37a.mp4" type="video/mp4">
+    </video>
+
+    <div class="container">
+        <div class="nav">
+
+            <div class="menu">
+                <a onclick="clicked('index.html', 'Index')" href="javascript:void(0);" style="text-decoration: none; color: inherit;">
+                <div class="logo w-inline-block">ELEMENTS</div>
+                </a>
+            </div>
+            <div class="divider"></div>
+            <div class="menu-bottom">
+                <ul class="nav-items">
+                    <li class="nav-item">
+                        <a class="nav-link" id="navlink" onclick="clicked('projects.html', 'Index')" href="javascript:void(0);">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="navlink" onclick="clicked('about.html', 'Index')" href="javascript:void(0);">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="navlink" onclick="clicked('contact.html', 'Index')" href="javascript:void(0);">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="objects">
+            <div class="crosses">
+              <!--  <ul>
+                <li>
+                    <img class="x" src="resources/svgs/icons8-close-100.svg" />
+                </li>
+
+                <li>
+                    <img class="x" src="resources/svgs/icons8-close-100.svg" />
+                </li>
+
+                <li>
+                    <img class="x" src="resources/svgs/icons8-close-100.svg" />
+                </li>
+            </ul>-->
+            </div>
+            <div class="lines">
+                <div class="side"></div>
+                <div class="up"></div>
+               <!-- <div class="sideline"></div> -->
+            </div>
+            <div class="words">Welcome to my personal website</div>
+            <div class="words2">Check out my projects</div>
+            <!--<div class="arrow">
+                <img src="resources/svgs/icons8-arrow-50.png" alt="rip idk where resources went"/>
+            </div>-->
+        </div>
+
+        <div class="content">
+            <div class="border"></div>
+        </div>
+    </div>
+
+    <a style="position: absolute; color: transparent; left: 98%;" href="https://elements6007.com/dubroycube">dubrw</a>
+
+    <!--<div class="info">New site beta, <a href="https://old.elements6007.com">visit legacy site</a></div>
+    -->
+    <script src="index.js"></script>
+</body>
+
+</html>

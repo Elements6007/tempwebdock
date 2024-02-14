@@ -1,0 +1,655 @@
+@keyframes line {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 95%;
+    }
+}
+
+@keyframes opacit {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes dropdown {
+    0% {
+        opacity: 0;
+        top: 0vw;
+    }
+
+    100% {
+        opacity: 1;
+        top: 1.2vw;
+    }
+
+}
+
+@keyframes slid {
+    0% {
+        opacity: 0;
+        margin-left: -2vw;
+    }
+
+    100% {
+        opacity: 1;
+        margin-left: 0vw;
+    }
+}
+
+@keyframes flyin {
+    0% {
+        transform: rotate(140deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes rise {
+    0% {
+        top: 120%;
+    }
+
+    100% {
+        top: 70%;
+    }
+}
+
+@keyframes sidelineanim {
+    0% {
+        top: 100%;
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        top: 60%;
+    }
+
+}
+
+@keyframes raise {
+    0% {
+        margin-top: 100%;
+    }
+
+    100% {
+        margin-top: 5%;
+    }
+
+}
+
+@keyframes upanim {
+    0% {
+        top: 100%;
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 1;
+        top: 30%;
+    }
+
+    100% {
+        opacity: 1;
+        top: 30%;
+        height: 0%;
+    }
+
+}
+
+@keyframes sideanim {
+    0% {
+        right: 100%;
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 1;
+        right: 30%;
+    }
+
+    100% {
+        opacity: 1;
+        right: 30%;
+        width: 0%;
+    }
+
+}
+
+@keyframes arrowdrop {
+    0% {
+        top: 40%;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        top: 43%;
+    }
+
+    100% {
+        opacity: 0;
+        top: 46%;
+    }
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+
+* {
+    background-color: #0f0f0f;
+    margin: 0px;
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+*::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+}
+
+.divider {
+    opacity: 1;
+    height: 1px;
+    width: 95%;
+    margin-top: 4.0833333333333335vw;
+    margin-left: 2vw;
+    margin-bottom: 1.3833333333333335vw;
+    align-self: flex-start;
+    background-color: #fff;
+    animation: line 1.7s ease-in-out;
+}
+
+.menu {
+    margin-left: 2vw;
+    margin-top: 0vw;
+    background-color: transparent;
+}
+
+.logo {
+    top: 1.2vw;
+    position: absolute;
+    background-color: transparent;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 4px;
+    animation: dropdown 1s ease-in-out forwards;
+}
+
+.w-inline-block {
+    max-width: 100%;
+    display: inline-block;
+    background-color: transparent;
+}
+
+.nav-items {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    animation: slid 1.5s ease-in-out;
+}
+
+#navlink {
+    background-color: transparent;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+#navlink:hover {
+    color: grey;
+}
+
+.crosses {
+    position: absolute;
+    left: 80%;
+    top: 70%;
+    animation: rise 1s ease-out;
+}
+
+.x {
+    width: 50px;
+    padding-top: 20px;
+    animation: flyin 1.3s ease-out;
+    transition: 0.3s ease-in-out;
+}
+
+.x:hover {
+    transform: rotate(30deg);
+}
+
+.side {
+    position: absolute;
+    opacity: 0;
+    top: 30%;
+    width: 70%;
+    height: 1px;
+    background-color: white;
+    animation: sideanim 2s ease-in-out forwards;
+    animation-delay: 0.7s;
+}
+
+.up {
+    position: absolute;
+    opacity: 0;
+    left: 70vw;
+    width: 1px;
+    height: 70%;
+    background-color: white;
+    animation: upanim 2s ease-out forwards;
+    animation-delay: 0.7s;
+}
+
+.words {
+    background-color: transparent;
+    position: absolute;
+    opacity: 0;
+    left: 22vw;
+    top: 32%;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 60px;
+    animation: slid 2s ease forwards;
+    animation-delay: 1s;
+}
+
+.words2 {
+    background-color: transparent;
+    position: absolute;
+    opacity: 0;
+    left: 24vw;
+    top: 42%;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 60px;
+    animation: slid 2s forwards;
+    animation-delay: 1s;
+}
+
+.arrow {
+    background-color: transparent;
+    position: absolute;
+    opacity: 0;
+    left: 58%;
+    animation: arrowdrop 3s infinite ease-in-out;
+    animation-delay: 4s;
+}
+
+.sideline {
+    position: absolute;
+    opacity: 0;
+    left: 87%;
+    width: 1px;
+    height: 60%;
+    background-color: white;
+    animation: sidelineanim 0.4s ease-out forwards;
+}
+
+.projects {
+    top: 1.6vw;
+    left: 11vw;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 14px;
+    position: absolute;
+    background-color: transparent;
+}
+
+.content {
+    margin-top: 2%;
+    animation: slid 1.5s ease-in-out;
+}
+
+.card {
+    width: 96%;
+    padding: 2%;
+    height: 10vw;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+a:link {
+    text-decoration: none !important;
+}
+
+.card>h3 {
+    background-color: transparent;
+}
+
+
+.card:hover {
+    backdrop-filter: blur(0.8rem);
+}
+
+.info {
+    position: absolute;
+    border: 1px;
+    top: 93%;
+    left: 93%;
+    width: 100px;
+    height: 40px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    background-color: transparent;
+}
+
+.info>a {
+    color: grey;
+}
+
+.about {
+    border: 1px;
+    margin-top: 4%;
+    margin-left: 30%;
+    width: 40%;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    letter-spacing: 4px;
+    background-color: transparent;
+    text-align: center;
+    animation: raise 1s forwards;
+}
+
+.photo {
+    width: 25%;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+.photo:hover {
+    width: 25.5%;
+}
+
+#githubstatus {
+    padding: 30px;
+    width: 50%;
+}
+
+.about>a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin-left: -30%;
+}
+
+.fa {
+    font-size: 30px;
+    transition: all 0.5s ease;
+}
+
+.fa:hover {
+    opacity: 0.4;
+}
+
+.contactinfo {
+    display: flexbox;
+    color: white;
+}
+
+.fa-twitter {
+    background: transparent;
+    color: white;
+    text-decoration: none;
+}
+
+.fa-youtube {
+    background: transparent;
+    color: white;
+    text-decoration: none;
+}
+
+.fa-instagram {
+    background: transparent;
+    color: white;
+    text-decoration: none;
+}
+
+.fa-github {
+    background: transparent;
+    color: white;
+    text-decoration: none;
+}
+
+.fa-google {
+    background: transparent;
+    color: white;
+    text-decoration: none;
+}
+
+.fa-reddit {
+    background: transparent;
+    color: white;
+    text-decoration: none;
+}
+
+.content-render {
+    padding: 2%;
+}
+
+.content-render>img {
+    border-radius: 20px;
+    width: 100%;
+    animation: opacit 2s forwards;
+}
+
+.contactlinks {
+    position: absolute;
+    animation: raise 1s forwards;
+    top: 25%;
+    left: 35%;
+}
+
+.contact {
+    font-size: 90px;
+    padding: 8%;
+    transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 479px) {
+
+    @keyframes dropdown {
+        0% {
+            opacity: 0;
+            top: 0vw;
+        }
+
+        100% {
+            opacity: 1;
+            top: 4vw;
+        }
+
+    }
+
+    @keyframes slid {
+        0% {
+            opacity: 0;
+            margin-left: -50vw;
+        }
+
+        100% {
+            opacity: 1;
+            margin-left: -5vw;
+        }
+    }
+
+    @keyframes slidproj {
+        0% {
+            opacity: 0;
+            margin-left: -50vw;
+        }
+
+        100% {
+            opacity: 1;
+            margin-left: 4vw;
+        }
+    }
+
+
+    @keyframes line {
+        0% {
+            width: 0%;
+        }
+
+        100% {
+            width: 90%;
+        }
+    }
+
+    .divider {
+        margin-top: 15.0833333333333335vw;
+        margin-left: 5vw;
+        width: 90%;
+    }
+
+    .logo {
+        animation: dropdown 1s ease-in-out forwards;
+        position: absolute;
+        background-color: transparent;
+
+    }
+
+    .menu {
+        margin-left: 5vw;
+        margin-top: 0vw;
+        font-family: 'Roboto', sans-serif;
+        color: #fff;
+        font-size: 17px;
+        letter-spacing: 2px;
+        background-color: transparent;
+
+    }
+
+    .nav-items {
+        background-color: transparent;
+        display: flex;
+        justify-content: space-between;
+        margin-left: -5vw;
+        width: 40%;
+        animation: slid 1.5s ease-in-out;
+    }
+
+    #navlink {
+        background-color: transparent;
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        color: #fff;
+        font-size: 12px;
+        transition: 0.3s ease-in-out;
+    }
+
+    #navlink:hover {
+        color: grey;
+    }
+
+    .words {
+        right: 33%;
+        left: 10%;
+        font-size: 30px;
+        width: 250px;
+    }
+
+    .words2 {
+        right: 30%;
+        left: 10%;
+        top: 50%;
+        font-size: 30px;
+        width: 250px;
+    }
+
+    .content {
+        margin-top: 10vw;
+        animation: slidproj 1.5s ease-in-out forwards;
+    }
+
+    .card {
+        width: 96%;
+        padding-top: 20vw;
+        height: 10vw;
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        transition: 0.5s;
+    }
+
+    .info {
+        position: absolute;
+        border: 1px;
+        top: 90%;
+        left: 80%;
+        width: 80px;
+        height: 50px;
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        background-color: transparent;
+    }
+
+    .fa {
+        font-size: 20px;
+        transition: all 0.5s ease;
+    }
+
+    .photo {
+        width: 70%;
+        border-radius: 50%;
+    }
+
+    #githubstatus {
+        position: absolute;
+        width: 70%;
+        right: 30px;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    .contactlinks {
+        position: absolute;
+        top: 30%;
+        left: 18%;
+    }
+
+    .contact {
+        font-size: 60px;
+        padding: 5%;
+        transition: all 0.5s ease;
+    }
+
+    /*.arrow {
+        display: none;
+    }*/
+
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elements</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="resources/js/clicked.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            background-color: transparent;
+        }
+
+        .blur {
+            position: absolute;
+            z-index: -1;
+            width: 96%;
+            height: 10vw;
+            padding: 1.5%;
+            backdrop-filter: blur(0.8rem);
+            border-radius: 20px;
+            opacity: 0;
+            transition: 0.7s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background" style="position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; background-color: black;"></div>
+    <video autoplay muted loop id="myVideo">
+        <source src="https://cdn.dribbble.com/userupload/3015436/file/original-3c03285d2412d53daeeda56f8810e37a.mp4"
+            type="video/mp4">
+    </video>
+    <div class="container">
+        <div class="nav">
+
+            <div class="menu">
+                <a onclick="clicked('index.html', 'Projects')" href="javascript:void(0);"
+                    style="text-decoration: none; color: inherit;">
+                    <div class="logo w-inline-block">ELEMENTS projects</div>
+                </a>
+            </div>
+            <div class="divider"></div>
+            <div class="menu-bottom">
+                <ul class="nav-items">
+                    <li class="nav-item">
+                        <a class="nav-link" id="navlink" onclick="clicked('projects.html', 'Projects')"
+                            href="javascript:void(0);">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="navlink" onclick="clicked('about.html', 'Projects')"
+                            href="javascript:void(0);">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="navlink" onclick="clicked('contact.html', 'Projects')"
+                            href="javascript:void(0);">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+
+        <a href="https://sortbyoldest.elements6007.com/">
+            <div class="card">
+                <h3>Return YouTube Sort By Oldest</h3>
+                Extension which returns sort by oldest for YouTube.
+            </div>
+        </a>
+        <a href="esp.html">
+            <div class="card">
+                <h3>ESP-8266-01 Door sensor</h3>
+                Home Assistant door sensor using ESP-8266-01 wifi module.
+            </div>
+        </a>
+        <a href="https://github.com/Elements6007/website">
+            <div class="card">
+                <h3>This site</h3>
+                this website source code.
+            </div>
+        </a>
+    </div>
+
+    <div class="info">New site beta, <a href="old.elements6007.com">visit legacy site</a></div>
+</body>
+<script src="resources/js/blur.js" ></script>
+
+</html>
